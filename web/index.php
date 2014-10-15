@@ -2,7 +2,7 @@
 <html lang="en-GB" class="no-js">
   <head>
     <meta charset="utf-8">
-    <title><?php echo constant('SiteName'); ?></title>
+    <title>Web Site Specification</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEBAAAAAAAAAAAAAAAAAQEBAQAAAAAAAAAAAAAAAAEBAQEAAAAAAAAAAAAAAAABAQEBAAAAAAAAAAABAQEBAQEBAQEBAQEAAAAAAQEBAQEBAQEBAQEBAAAAAAEBAQEBAQEBAQEBAQAAAAABAQEBAQEBAQEBAQEAAAAAAAAAAAEBAQEAAAAAAAAAAAAAAAABAQEBAAAAAAAAAAAAAAAAAQEBAQAAAAAAAAAAAAAAAAEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAD//wAA/D8AAPw/AAD8PwAA/D8AAMADAADAAwAAwAMAAMADAAD8PwAA/D8AAPw/AAD8PwAA//8AAP//AAA=" rel="icon" type="image/x-icon">
@@ -151,8 +151,10 @@
             </ul>
             <form class="form-inline" role="form">
               <div class="form-group">
-                <label class="sr-only" for="inpService">Service</label>
-                <input type="text" class="form-control" id="inpService" placeholder="Service Required">
+                <div class="input-group">
+                  <div class="input-group-addon"><i class="fa fa-medkit"></i></div>
+                  <input class="form-control" type="text" placeholder="Service Required">
+                </div>
               </div>
               <div class="form-group">
                 <div class="input-group">
@@ -281,7 +283,7 @@
             <h2><span class='label label-danger animated fadeIn'>Billed</span></h4>
             <p>Billed</p>
             <ul class="list-unstyled">
-              <li>...</li>
+              <li>Similar to lybrate but if there are graphs it should use D3.js</li>
             </ul>
           </div>
           <!-- xxx -->
@@ -289,7 +291,7 @@
             <h2><span class='label label-danger animated fadeIn'>Billed Detail</span></h4>
             <p>Billed Detail</p>
             <ul class="list-unstyled">
-              <li>...</li>
+              <li>Similar to lybrate but if there are graphs it should use D3.js</li>
             </ul>
           </div>
           <!-- xxx -->
@@ -297,7 +299,7 @@
             <h2><span class='label label-danger animated fadeIn'>DueIn</span></h4>
             <p>DueIn</p>
             <ul class="list-unstyled">
-              <li>...</li>
+              <li>Similar to lybrate but if there are graphs it should use D3.js</li>
             </ul>
           </div>
           <!-- xxx -->
@@ -305,7 +307,7 @@
             <h2><span class='label label-danger animated fadeIn'>Overdue income</span></h4>
             <p>Overdue income</p>
             <ul class="list-unstyled">
-              <li>...</li>
+              <li>Similar to lybrate but if there are graphs it should use D3.js</li>
             </ul>
           </div>
           <!-- xxx -->
@@ -313,7 +315,7 @@
             <h2><span class='label label-danger animated fadeIn'>Download Reports</span></h4>
             <p>Download Reports</p>
             <ul class="list-unstyled">
-              <li>...</li>
+              <li>Similar to lybrate but if there are graphs it should use D3.js</li>
             </ul>
           </div>
           <!-- xxx -->
@@ -321,7 +323,7 @@
             <h2><span class='label label-danger animated fadeIn'>Booking Intensity</span></h4>
             <p>Booking Intensity</p>
             <ul class="list-unstyled">
-              <li>...</li>
+              <li>Similar to lybrate but if there are graphs it should use D3.js</li>
             </ul>
           </div>
           <!-- xxx -->
@@ -329,7 +331,7 @@
             <h2><span class='label label-danger animated fadeIn'>Booking Trends</span></h4>
             <p>Booking Trends</p>
             <ul class="list-unstyled">
-              <li>...</li>
+              <li>Similar to lybrate but if there are graphs it should use D3.js</li>
             </ul>
           </div>
           <!-- xxx -->
@@ -337,7 +339,7 @@
             <h2><span class='label label-danger animated fadeIn'>Charge per Customer</span></h4>
             <p>Charge per Customer</p>
             <ul class="list-unstyled">
-              <li>...</li>
+              <li>Similar to lybrate but if there are graphs it should use D3.js</li>
             </ul>
           </div>
           <!-- xxx -->
