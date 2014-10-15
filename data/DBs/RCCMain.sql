@@ -166,7 +166,6 @@ CREATE TABLE IF NOT EXISTS `RCCMain`.`Countries` (
   `optLTRorRTL` VARCHAR(1) NULL,
   `idLkCurrency` INT UNSIGNED NULL,
   `optMetricImperial` VARCHAR(1) NULL,
-  `TimeZone` VARCHAR(45) NULL,
   `idLkLanguage` INT UNSIGNED NULL,
   PRIMARY KEY (`idCountry`))
 ENGINE = InnoDB

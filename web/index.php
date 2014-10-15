@@ -143,7 +143,6 @@
           <!-- xxx -->
           <div id="IndexPg">
             <h2><span class='label label-danger animated fadeIn'>Index</span></h4>
-            <p>Index features</p>
             <ul class="list-unstyled">
               <li>Quick service search</li>
               <li>Invite to join as doctor</li>
@@ -221,7 +220,6 @@
           <!-- xxx -->
           <div id="Search">
             <h2><span class='label label-danger animated fadeIn'>Search</span></h4>
-            <p>Search features</p>
             <ul class="list-unstyled">
               <li>Search should be by
               <ul>
@@ -242,9 +240,18 @@
           <!-- xxx -->
           <div id="MkBooking">
             <h2><span class='label label-danger animated fadeIn'>BookIt</span></h4>
-            <p>BookIt features</p>
             <ul class="list-unstyled">
               <li>Customers that have already booked can leave a star rating and a comment for that carer</li>
+              <li>A customer needs to create an account for the booking first <button class='btn btn-default' data-toggle='modal' data-target='#ModalCustomers'><i class='fa fa-external-link-square'></i> Initial Customers Form</button></li>
+              <li>A customer needs to be warned that the Carer must first accept the booking if the carer has this flag set</li>
+              <li>Terms and conditions must be agreed before the booking can complete -- Agreed Tc Cs,When Agreed Tc Cs </li>
+              <li>Ths customer record also stores
+                <ul>
+                  <li>current balance</li>
+                  <li>Hide Help Btn</li>
+                  <li>Web Country -  this helps with auto populating the locale for the next visit. sample of data for a locale <button class='btn btn-default' data-toggle='modal' data-target='#ModalCountries'><i class='fa fa-external-link-square'></i> Initial Countries Form</button></li>
+                </ul>
+              </li>
             </ul>
           </div>
           <!-- xxx -->
@@ -592,7 +599,7 @@
       <div class='modal-dialog modal-lg'>
         <div class='modal-content'>
           <div class='modal-header'>
-          <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span><span class='sr-only'>Close</span></button>
+          <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span></button>
             <h4 class='modal-title'>Carers draft form</h4>
           </div>
           <!-- ------ -->
@@ -679,7 +686,7 @@
           </div>
           <!-- ------ -->
           <div class='modal-footer'>
-            <button class='btn pull-right btn-default' data-toggle='modal' data-dismiss='modal' aria-hidden='true'><i class='fa fa-times'></i> <span class='sr-only'>Close</span></button>
+            <button class='btn pull-right btn-default' data-toggle='modal' data-dismiss='modal' aria-hidden='true'><i class='fa fa-times'></i> Close</button>
           </div>
         </div>
       </div>
@@ -689,7 +696,7 @@
       <div class='modal-dialog modal-lg'>
         <div class='modal-content'>
           <div class='modal-header'>
-          <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span><span class='sr-only'>Close</span></button>
+          <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span></button>
             <h4 class='modal-title'>ContactMethods draft form</h4>
           </div>
           <!-- ------ -->
@@ -741,7 +748,7 @@
           </div>
           <!-- ------ -->
           <div class='modal-footer'>
-            <button class='btn pull-right btn-default' data-toggle='modal' data-dismiss='modal' aria-hidden='true'><i class='fa fa-times'></i> <span class='sr-only'>Close</span></button>
+            <button class='btn pull-right btn-default' data-toggle='modal' data-dismiss='modal' aria-hidden='true'><i class='fa fa-times'></i> Close</button>
           </div>
         </div>
       </div>
@@ -751,7 +758,7 @@
       <div class='modal-dialog modal-lg'>
         <div class='modal-content'>
           <div class='modal-header'>
-          <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span><span class='sr-only'>Close</span></button>
+          <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span></button>
             <h4 class='modal-title'>TcCs draft form</h4>
           </div>
           <!-- ------ -->
@@ -1061,7 +1068,7 @@
           </div>
           <!-- ------ -->
           <div class='modal-footer'>
-            <button class='btn pull-right btn-default' data-toggle='modal' data-dismiss='modal' aria-hidden='true'><i class='fa fa-times'></i> <span class='sr-only'>Close</span></button>
+            <button class='btn pull-right btn-default' data-toggle='modal' data-dismiss='modal' aria-hidden='true'><i class='fa fa-times'></i> Close</button>
           </div>
         </div>
       </div>
@@ -1071,7 +1078,7 @@
       <div class='modal-dialog'>
         <div class='modal-content'>
           <div class='modal-header'>
-          <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span><span class='sr-only'>Close</span></button>
+          <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span></button>
             <h4 class='modal-title'>login form</h4>
           </div>
           <!-- ------ -->
@@ -1119,11 +1126,194 @@
             <!-- /login-widget -->
           <!-- ------ -->
           <div class='modal-footer'>
+            <button class='btn pull-right btn-default' data-toggle='modal' data-dismiss='modal' aria-hidden='true'><i class='fa fa-times'></i> Close</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div id='ModalCustomers' class='modal fade' tabindex='-1' role='dialog' aria-hidden='true'>
+      <div class='modal-dialog modal-lg'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+          <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span></button>
+            <h4 class='modal-title'>Customers draft form</h4>
+          </div>
+          <!-- ------ -->
+          <div class='modal-body'>
+            <form class='form-horizontal' role='form' name='frmCustomers'>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpSalutation'>Salutation</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='text' class='form-control typeahead' name='inpSalutation' placeholder='Salutation ...' ng-model='inpSalutation'>
+                  <span ng-show='frmCustomers.inpSalutation.$dirty && frmCustomers.inpSalutation.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpFirstName'>First Name</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='text' class='form-control' name='inpFirstName' maxlength='20' minlength='1' placeholder='First Name' ng-trim='true' ng-maxlength='20' ng-model='inpFirstName'>
+                  <span ng-show='frmCustomers.inpFirstName.$dirty && frmCustomers.inpFirstName.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpLastName'>Last Name</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='text' class='form-control' name='inpLastName' maxlength='20' minlength='1' placeholder='Last Name' ng-trim='true' ng-maxlength='20' ng-model='inpLastName'>
+                  <span ng-show='frmCustomers.inpLastName.$dirty && frmCustomers.inpLastName.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpCPass'>Pass</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='text' class='form-control' name='inpCPass' maxlength='45' minlength='1' placeholder='Password' ng-trim='true' ng-maxlength='45' ng-model='inpCPass'>
+                  <span ng-show='frmCustomers.inpCPass.$dirty && frmCustomers.inpCPass.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpGender'>Gender</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <div class='btn-group' data-toggle='buttons' name='inpGender' style='color:#000;'>
+                    <label data-loading-text='loading...' class='btn btn-default active'><input type='radio' name='optionsGender' data-sel='1'>Male</label>
+                    <label data-loading-text='loading...' class='btn btn-default'       ><input type='radio' name='optionsGender' data-sel='2'>Female</label>
+                  </div>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpDOB'>Date Of Birth</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input class='form-control' name='inpDOB' type='date' date-date-format='dd-mm-yyyy' value="{{ date | date: 'dd-MM-yyyy' }}" ng-model='inpDOB'>
+                  <span ng-show='frmCustomers.inpDOB.$dirty && frmCustomers.inpDOB.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpRememberMe'>Remember Me</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpRememberMe' ng-model='inpRememberMe'>
+                </div>
+              </div>
+              <!-- xxx -->
+              </form>
+            </div>
+          <!-- ------ -->
+          <div class='modal-footer'>
+            <button class='btn pull-right btn-default' data-toggle='modal' data-dismiss='modal' aria-hidden='true'><i class='fa fa-times'></i> Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id='ModalCountries' class='modal fade' tabindex='-1' role='dialog' aria-hidden='true'>
+      <div class='modal-dialog modal-lg'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+          <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span></button>
+            <h4 class='modal-title'>Countries draft form</h4>
+          </div>
+          <!-- ------ -->
+          <div class='modal-body'>
+            <form class='form-horizontal' role='form' name='frmCountries'>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpDescription'>Name</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='text' class='form-control' name='inpDescription' maxlength='20' minlength='1' placeholder='England' ng-trim='true' ng-maxlength='20' ng-model='inpDescription'>
+                  <span ng-show='frmCountries.inpDescription.$dirty && frmCountries.inpDescription.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpBrowserDef'>Browser Def</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='text' class='form-control' name='inpBrowserDef' maxlength='6' minlength='1' placeholder='en-uk' ng-trim='true' ng-maxlength='6' ng-model='inpBrowserDef'>
+                  <span ng-show='frmCountries.inpBrowserDef.$dirty && frmCountries.inpBrowserDef.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpShortDef'>Short Def</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='text' class='form-control' name='inpShortDef' maxlength='2' minlength='1' placeholder='EN' ng-trim='true' ng-maxlength='2' ng-model='inpShortDef'>
+                  <span ng-show='frmCountries.inpShortDef.$dirty && frmCountries.inpShortDef.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpLTRorRTL'>Text Direction</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <select class='form-control' name='inpLTRorRTL'>
+                    <option value='A'>Left to Right</option>
+                    <option value='B'>Right to Left</option>
+                  </select>
+                  <span ng-show='frmCountries.inpLTRorRTL.$dirty && frmCountries.inpLTRorRTL.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpCurrency'>Currency</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='text' class='form-control typeahead' name='inpCurrency' placeholder='Currency ...' ng-model='inpCurrency'>
+                  <span ng-show='frmCountries.inpCurrency.$dirty && frmCountries.inpCurrency.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpMetricImperial'>Metric Imperial</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <select class='form-control' name='inpMetricImperial'>
+                    <option value='I'>Imperial</option>
+                    <option value='M'>Metric</option>
+                  </select>
+                  <span ng-show='frmCountries.inpMetricImperial.$dirty && frmCountries.inpMetricImperial.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpLanguage'>Language</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='text' class='form-control typeahead' name='inpLanguage' placeholder='Language ...' ng-model='inpLanguage'>
+                  <span ng-show='frmCountries.inpLanguage.$dirty && frmCountries.inpLanguage.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+            </form>
+            <!-- xxx -->
+          </div>
+          <!-- ------ -->
+          <div class='modal-footer'>
             <button class='btn pull-right btn-default' data-toggle='modal' data-dismiss='modal' aria-hidden='true'><i class='fa fa-times'></i> <span class='sr-only'>Close</span></button>
           </div>
         </div>
       </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <script src='assets/js/jquery-1.11.1.min.js'></script>
     <script src='assets/js/bootstrap.min.js'></script>
