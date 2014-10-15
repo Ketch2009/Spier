@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap-switch.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/Std.css">
+    <link rel="stylesheet" href="assets/css/redactor.css">
   </head>
   <body style="background-image:url('assets/images/bgfusion.png');">
 
@@ -90,8 +91,8 @@
             </li>
 
             <li class="dropdown">
-              <a href="#" id="Appointments" class="dropdown-toggle" data-toggle="dropdown">Appointments <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="Appointments">
+              <a href="#" id="Engagements" class="dropdown-toggle" data-toggle="dropdown">Engagements <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="Engagements">
                 <li><a href="#AddAppt" tabindex="-1">Add</a></li>
                 <li><a href="#AcceptAppt" tabindex="-1">Accept</a></li>
                 <li><a href="#UnAcceptAppt" tabindex="-1">UnAccept</a></li>
@@ -153,7 +154,7 @@
               <div class="form-group">
                 <div class="input-group">
                   <div class="input-group-addon"><i class="fa fa-medkit"></i></div>
-                  <input class="form-control" type="text" placeholder="Service Required">
+                  <input class="form-control" type="text" placeholder="Service Category">
                 </div>
               </div>
               <div class="form-group">
@@ -234,6 +235,7 @@
                 <li>Affiliated Hospital</li>
                 <li>Spoken Language</li>
                 <li>Available times and date</li>
+                <li>Number of endorsements</li>
               </ul>
               </li>
               <li>We have though of a search in  <span class='label label-default'>search results</span> - but for now lets leave it</li>
@@ -377,7 +379,8 @@
             </ul>
             <button class='btn btn-default' data-toggle='modal' data-target='#ModalBusinesses'><i class='fa fa-external-link-square'></i> Initial Businesses Form</button>
             Once the business is entered the Carer should enter how this business effect them.
-            <button class='btn btn-default' data-toggle='modal' data-target='#ModalCarerBusinessJoin'><i class='fa fa-external-link-square'></i> Initial CarerBusinessJoin Form</button>
+            <button class='btn btn-default' data-toggle='modal' data-target='#ModalCarerBusinessJoin'><i class='fa fa-external-link-square'></i> Initial CarerBusinessJoin Form</button><br>
+            Note that the Business can also have multiple contact methods, eg emailo, phone <button class='btn btn-default' data-toggle='modal' data-target='#ModalContactMethods'><i class='fa fa-external-link-square'></i> Initial ContactMethods Form</button> to be used for <span class='label label-default'>call for appointment/price</span>
           </div>
           <!-- xxx -->
           <div id="Colleagues">
@@ -425,56 +428,58 @@
           </div>
           <!-- xxx -->
           <div id="Hospitals">
-            <h2><span class='label label-danger animated fadeIn'>Hospitals</span></h4>
+            <h2><span class='label label-danger animated fadeIn'>Affiliated Hospitals</span></h4>
             <p>Hospitals</p>
             <ul class="list-unstyled">
-              <li>...</li>
+              <li>This is just to show on the public profile dash page</li>
             </ul>
+            <button class='btn btn-default' data-toggle='modal' data-target='#ModalAffiliatedHospitals'><i class='fa fa-external-link-square'></i> Initial AffiliatedHospitals Form</button>
           </div>
           <!-- xxx -->
           <div id="Langauges">
-            <h2><span class='label label-danger animated fadeIn'>Langauges</span></h4>
-            <p>Langauges</p>
+            <h2><span class='label label-danger animated fadeIn'>Spoken Langauges</span></h4>
             <ul class="list-unstyled">
-              <li>...</li>
+              <li>Should be for fleunt Langauges only</li>
+              <li>This list is used in the seach for Carer form. eg you may be in New York but want a Carer that speaks Hindi</li>
             </ul>
+            <button class='btn btn-default' data-toggle='modal' data-target='#ModalLookups'><i class='fa fa-external-link-square'></i> Initial Lookups Form</button> though the langauge should be linked back to the Carer <button class='btn btn-default' data-toggle='modal' data-target='#ModalLanguageLink'><i class='fa fa-external-link-square'></i> Initial LanguageLink Form</button>
+            <br>
           </div>
           <!-- xxx -->
           <div id="Views">
             <h2><span class='label label-danger animated fadeIn'>Profile Views</span></h4>
-            <p>Profile Views</p>
             <ul class="list-unstyled">
               <li>Carers can see how many people have viewed their profile</li>
+              <li>This helps encourage them to populate their profile. This information is only available to them, not for public knowledge</li>
             </ul>
           </div>
           <!-- xxx -->
           <div id="Consultants">
             <h2><span class='label label-danger animated fadeIn'>Consultants</span></h4>
-            <p>Consultants</p>
             <ul class="list-unstyled">
-              <li>...</li>
+              <li>The entry of <button class='btn btn-default' data-toggle='modal' data-target='#ModalConsultants'><i class='fa fa-external-link-square'></i>Consultants</button> is only for fast entering of costs in the <span class='label label-default'>engagement</span> details <a href="#SectEng">Engagements</a>.</li>
             </ul>
           </div>
           <!-- xxx -->
           <div id="Endorsements">
             <h2><span class='label label-danger animated fadeIn'>Endorsements</span></h4>
-            <p>Endorsements</p>
             <ul class="list-unstyled">
-              <li>...</li>
+              <li>A Carer can endorse another carer. This encourages a carer to invite colleagues so that they can endorse eachother</li>
+              <li>An Endorsement can only be counted if the "endorser" has the Carer.flgVettingDone is set. This stops Carers adding fake carers just to get an endorsement</li>
+              <li>Thge endorsement option should only be available to Carers with flgVettingDone set</li>
             </ul>
           </div>
           <!-- xxx -->
           <div id="Prescriptions">
             <h2><span class='label label-danger animated fadeIn'>Prescriptions</span></h4>
-            <p>Prescriptions</p>
             <ul class="list-unstyled">
-              <li>...</li>
+              <li>Prescriptions are entered so that is only for fast entering <span class='label label-default'>engagement</span> details <a href="#SectEng">Engagements</a>.</li></li>
             </ul>
+            <button class='btn btn-default' data-toggle='modal' data-target='#ModalPrescriptions'><i class='fa fa-external-link-square'></i> Initial Prescriptions Form</button>
           </div>
           <!-- xxx -->
           <div id="Messages">
             <h2><span class='label label-danger animated fadeIn'>Default Messages</span></h4>
-            <p>Default Messages</p>
             <ul class="list-unstyled">
               <li>...</li>
             </ul>
@@ -482,7 +487,6 @@
           <!-- xxx -->
           <div id="WorkSchedules">
             <h2><span class='label label-danger animated fadeIn'>Work Schedules</span></h4>
-            <p>Work Schedules</p>
             <ul class="list-unstyled">
               <li>...</li>
             </ul>
@@ -490,7 +494,6 @@
           <!-- xxx -->
           <div id="Services">
             <h2><span class='label label-danger animated fadeIn'>Services</span></h4>
-            <p>Services</p>
             <ul class="list-unstyled">
               <li>Carers are able to supply services with travel. So a consultation at the patients home should be charged as
               <ul>
@@ -499,11 +502,11 @@
               </ul></li>
               <li>Carers must be able to copy services provided at the same clinic from another doctor</li>
             </ul>
+            <button class='btn btn-default' data-toggle='modal' data-target='#ModalServicesOffered'><i class='fa fa-external-link-square'></i> Initial ServicesOffered Form</button>
           </div>
           <!-- xxx -->
           <div id="ServiceExtras">
             <h2><span class='label label-danger animated fadeIn'>Service Extras</span></h4>
-            <p>Service Extras</p>
             <ul class="list-unstyled">
               <li>add available extras – eg oxygen for ambulance trips</li>
             </ul>
@@ -511,27 +514,24 @@
           <!-- xxx -->
         </section>
         <!-- xxx -->
-        <section>
-          <h1><span class='label label-default'>Appointments</span></h1>
+        <section id='SectEng'>
+          <h1><span class='label label-default'>Engagement</span></h1>
           <div id="AddAppt">
-            <h2><span class='label label-danger animated fadeIn'>Add Appointment</span></h4>
-            <p>Add Appointment</p>
+            <h2><span class='label label-danger animated fadeIn'>Add Engagement</span></h4>
             <ul class="list-unstyled">
               <li>...</li>
             </ul>
           </div>
           <!-- xxx -->
           <div id="AcceptAppt">
-            <h2><span class='label label-danger animated fadeIn'>Accept Appointment</span></h4>
-            <p>Accept Appointment</p>
+            <h2><span class='label label-danger animated fadeIn'>Accept Engagement</span></h4>
             <ul class="list-unstyled">
               <li>...</li>
             </ul>
           </div>
           <!-- xxx -->
           <div id="UnAcceptAppt">
-            <h2><span class='label label-danger animated fadeIn'>UnAccept Appointment</span></h4>
-            <p>UnAccept Appointment</p>
+            <h2><span class='label label-danger animated fadeIn'>UnAccept Engagement</span></h4>
             <ul class="list-unstyled">
               <li>...</li>
             </ul>
@@ -539,7 +539,6 @@
           <!-- xxx -->
           <div id="ViewSntMsg">
             <h2><span class='label label-danger animated fadeIn'>View Sent Messages</span></h4>
-            <p>View Sent Messages</p>
             <ul class="list-unstyled">
               <li>...</li>
             </ul>
@@ -551,7 +550,6 @@
           <h1><span class='label label-default'>Engagement</span></h1>
           <div id="AddTr">
             <h2><span class='label label-danger animated fadeIn'>Add Treatment</span></h4>
-            <p>Add Treatment</p>
             <ul class="list-unstyled">
               <li>...</li>
             </ul>
@@ -559,7 +557,6 @@
           <!-- xxx -->
           <div id="NextVisit">
             <h2><span class='label label-danger animated fadeIn'>Next Visit</span></h4>
-            <p>Next Visit</p>
             <ul class="list-unstyled">
               <li>...</li>
             </ul>
@@ -567,7 +564,6 @@
           <!-- xxx -->
           <div id="Prescribe">
             <h2><span class='label label-danger animated fadeIn'>Prescribe</span></h4>
-            <p>Prescribe</p>
             <ul class="list-unstyled">
               <li>...</li>
             </ul>
@@ -575,7 +571,6 @@
           <!-- xxx -->
           <div id="Expense">
             <h2><span class='label label-danger animated fadeIn'>Expense</span></h4>
-            <p>Expense</p>
             <ul class="list-unstyled">
               <li>...</li>
             </ul>
@@ -583,7 +578,6 @@
           <!-- xxx -->
           <div id="Payment">
             <h2><span class='label label-danger animated fadeIn'>Payment</span></h4>
-            <p>Payment</p>
             <ul class="list-unstyled">
               <li>...</li>
             </ul>
@@ -591,7 +585,6 @@
           <!-- xxx -->
           <div id="Attachment">
             <h2><span class='label label-danger animated fadeIn'>Attachment</span></h4>
-            <p>Attachment</p>
             <ul class="list-unstyled">
               <li>...</li>
             </ul>
@@ -603,7 +596,6 @@
           <h1><span class='label label-default'>Misc Pages, but still needed</span></h1>
           <div id="TTickets">
             <h2><span class='label label-danger animated fadeIn'>Trouble Tickets</span></h4>
-            <p>Trouble Tickets</p>
             <ul class="list-unstyled">
               <li>There is no feedback, but rather a trouble ticket system</li>
             </ul>
@@ -611,7 +603,6 @@
           <!-- xxx -->
           <div id="404">
             <h2><span class='label label-danger animated fadeIn'>404</span></h4>
-            <p>404</p>
             <ul class="list-unstyled">
               <li>This should be a cool 404 page to wow people and also record details of the visitor.</li>
             </ul>
@@ -1697,23 +1688,447 @@
       </div>
     </div>
 
+    <div id='ModalServicesOffered' class='modal fade' tabindex='-1' role='dialog' aria-hidden='true'>
+      <div class='modal-dialog modal-lg'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+          <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span></button>
+            <h4 class='modal-title'>ServicesOffered draft form</h4>
+          </div>
+          <!-- ------ -->
+          <div class='modal-body'>
+            <form class='form-horizontal' role='form' name='frmServicesOffered'>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpCategory'>Category</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='text' class='form-control typeahead' name='inpCategory' placeholder='Category ...' ng-model='inpCategory'>
+                  <span ng-show='frmServicesOffered.inpCategory.$dirty && frmServicesOffered.inpCategory.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpPriceAdvertised'>Price Advertised</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpPriceAdvertised' ng-model='inpPriceAdvertised'>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpCurrency'>Currency</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='text' class='form-control typeahead' name='inpCurrency' placeholder='Currency ...' ng-model='inpCurrency'>
+                  <span ng-show='frmServicesOffered.inpCurrency.$dirty && frmServicesOffered.inpCurrency.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpInitialCharge'>Initial Charge</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='number' name='inpInitialCharge' class='form-control' maxlength='8' placeholder='0' ng-pattern='FloatRegEx' ng-trim='true' ng-maxlength='8' ng-model='inpInitialCharge'>
+                  <span ng-show='frmServicesOffered.inpInitialCharge.$dirty && frmServicesOffered.inpInitialCharge.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpVariableCharging'>Variable Charging</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpVariableCharging' ng-model='inpVariableCharging'>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpChargeTime'>Charge Time</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpChargeTime' ng-model='inpChargeTime'>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpInitialTimeMins'>Initial Time Mins</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='number' name='inpInitialTimeMins' class='form-control' maxlength='5' placeholder='0' ng-pattern='IntRegEx' ng-trim='true' ng-maxlength='5' ng-model='inpInitialTimeMins'>
+                  <span ng-show='frmServicesOffered.inpInitialTimeMins.$dirty && frmServicesOffered.inpInitialTimeMins.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpChargeTravel'>Charge Travel</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpChargeTravel' ng-model='inpChargeTravel'>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpInitialDistance'>Initial Distance</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='number' name='inpInitialDistance' class='form-control' maxlength='5' placeholder='0' ng-pattern='IntRegEx' ng-trim='true' ng-maxlength='5' ng-model='inpInitialDistance'>
+                  <span ng-show='frmServicesOffered.inpInitialDistance.$dirty && frmServicesOffered.inpInitialDistance.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpInitTimeOrDistance'>Init Time Or Distance</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpInitTimeOrDistance' ng-model='inpInitTimeOrDistance'>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpAdditionalTime'>Additional Time</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpAdditionalTime' ng-model='inpAdditionalTime'>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpAdditionalTimeSlice'>Additional Time Slice</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='number' name='inpAdditionalTimeSlice' class='form-control' maxlength='5' placeholder='0' ng-pattern='IntRegEx' ng-trim='true' ng-maxlength='5' ng-model='inpAdditionalTimeSlice'>
+                  <span ng-show='frmServicesOffered.inpAdditionalTimeSlice.$dirty && frmServicesOffered.inpAdditionalTimeSlice.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpAdditionalTimeCharge'>Additional Time Charge</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='number' name='inpAdditionalTimeCharge' class='form-control' maxlength='8' placeholder='0' ng-pattern='FloatRegEx' ng-trim='true' ng-maxlength='8' ng-model='inpAdditionalTimeCharge'>
+                  <span ng-show='frmServicesOffered.inpAdditionalTimeCharge.$dirty && frmServicesOffered.inpAdditionalTimeCharge.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpAdditionalDistance'>Additional Distance</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpAdditionalDistance' ng-model='inpAdditionalDistance'>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpAdditionalDistanceSlice'>Additional Distance Slice</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='number' name='inpAdditionalDistanceSlice' class='form-control' maxlength='5' placeholder='0' ng-pattern='IntRegEx' ng-trim='true' ng-maxlength='5' ng-model='inpAdditionalDistanceSlice'>
+                  <span ng-show='frmServicesOffered.inpAdditionalDistanceSlice.$dirty && frmServicesOffered.inpAdditionalDistanceSlice.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpAdditionalDistanceCharge'>Additional Distance Charge</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='number' name='inpAdditionalDistanceCharge' class='form-control' maxlength='8' placeholder='0' ng-pattern='FloatRegEx' ng-trim='true' ng-maxlength='8' ng-model='inpAdditionalDistanceCharge'>
+                  <span ng-show='frmServicesOffered.inpAdditionalDistanceCharge.$dirty && frmServicesOffered.inpAdditionalDistanceCharge.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpAddnlTimeOrDistance'>Addnl Time Or Distance</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpAddnlTimeOrDistance' ng-model='inpAddnlTimeOrDistance'>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpCountServicesBooked'>Count Services Booked</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='number' name='inpCountServicesBooked' class='form-control' maxlength='5' placeholder='0' ng-pattern='IntRegEx' ng-trim='true' ng-maxlength='5' ng-model='inpCountServicesBooked'>
+                  <span ng-show='frmServicesOffered.inpCountServicesBooked.$dirty && frmServicesOffered.inpCountServicesBooked.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpWhenAdded'>When Added</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input class='form-control' name='inpWhenAdded' type='datetime' ng-model='inpWhenAdded'>
+                  <span ng-show='frmServicesOffered.inpWhenAdded.$dirty && frmServicesOffered.inpWhenAdded.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+            </form>
+            <!-- xxx -->
+          </div>
+          <!-- ------ -->
+          <div class='modal-footer'>
+            <button class='btn pull-right btn-default' data-toggle='modal' data-dismiss='modal' aria-hidden='true'><i class='fa fa-times'></i> Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div id='ModalAffiliatedHospitals' class='modal fade' tabindex='-1' role='dialog' aria-hidden='true'>
+      <div class='modal-dialog modal-lg'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+          <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span></button>
+            <h4 class='modal-title'>AffiliatedHospitals draft form</h4>
+          </div>
+          <!-- ------ -->
+          <div class='modal-body'>
+            <form class='form-horizontal' role='form' name='frmAffiliatedHospitals'>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-6  col-sm-4 col-md-2 col-lg-2 input-lg control-label' for='inpName'>Name</label>
+                <div class='col-xs-6 col-sm-9 col-md-10 col-lg-6'>
+                  <input type='text' class='form-control input-lg typeahead' name='inpName' placeholder='Name ...' ng-model='inpName'>
+                  <span ng-show='frmAffiliatedHospitals.inpName.$dirty && frmAffiliatedHospitals.inpName.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+            </form>
+            <!-- xxx -->
+          </div>
+          <!-- ------ -->
+          <div class='modal-footer'>
+            <button class='btn pull-right btn-default' data-toggle='modal' data-dismiss='modal' aria-hidden='true'><i class='fa fa-times'></i> Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div id='ModalLookups' class='modal fade' tabindex='-1' role='dialog' aria-hidden='true'>
+      <div class='modal-dialog modal-lg'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+          <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span></button>
+            <h4 class='modal-title'>Lookups draft form</h4>
+          </div>
+          <!-- ------ -->
+          <div class='modal-body'>
+            <ul>Lookups are used for
+              <li>Salutation</li>
+              <li>Service Category</li>
+              <li>Services</li>
+              <li>optional Extras for pricing</li>
+              <li>Language</li>
+              <li>Currency</li>
+              <li>Language</li>
+              <li>Job Title</li>
+              <li>Qualification and Memebership</li>
+              <li>Hospitals</li>
+              <li>Dosage Units</li>
+            </ul>
+            <form class='form-horizontal' role='form' name='frmLookups'>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-6  col-sm-3 col-md-1 col-lg-1 input-lg control-label' for='inpType'>Type</label>
+                <div class='col-xs-6 col-sm-9 col-md-7 col-lg-6'>
+                  <input type='text' class='form-control input-lg' name='inpType' maxlength='6' minlength='1' placeholder='Type, eg Langauge' ng-trim='true' ng-maxlength='6' ng-model='inpType'>
+                  <span ng-show='frmLookups.inpType.$dirty && frmLookups.inpType.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-6  col-sm-3 col-md-1 col-lg-1 input-lg control-label' for='inpLkVal'>Val</label>
+                <div class='col-xs-6 col-sm-9 col-md-7 col-lg-6'>
+                  <input type='text' class='form-control input-lg' name='inpLkVal' maxlength='10' minlength='1' placeholder='eg En' ng-trim='true' ng-maxlength='10' ng-model='inpLkVal'>
+                  <span ng-show='frmLookups.inpLkVal.$dirty && frmLookups.inpLkVal.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-6  col-sm-3 col-md-1 col-lg-1 input-lg control-label' for='inpLkDesc'>Desc</label>
+                <div class='col-xs-6 col-sm-9 col-md-7 col-lg-6'>
+                  <input type='text' class='form-control input-lg' name='inpLkDesc' maxlength='200' minlength='1' placeholder='eg English' ng-trim='true' ng-maxlength='200' ng-model='inpLkDesc'>
+                  <span ng-show='frmLookups.inpLkDesc.$dirty && frmLookups.inpLkDesc.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>      <!-- xxx -->
+            </form>
+            <!-- xxx -->
+          </div>
+          <!-- ------ -->
+          <div class='modal-footer'>
+            <button class='btn pull-right btn-default' data-toggle='modal' data-dismiss='modal' aria-hidden='true'><i class='fa fa-times'></i> Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div id='ModalLanguageLink' class='modal fade' tabindex='-1' role='dialog' aria-hidden='true'>
+      <div class='modal-dialog modal-lg'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+          <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span></button>
+            <h4 class='modal-title'>LanguageLink draft form</h4>
+          </div>
+          <!-- ------ -->
+          <div class='modal-body'>
+            <form class='form-horizontal' role='form' name='frmLanguageLink'>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-6  col-sm-4 col-md-2 col-lg-2 input-lg control-label' for='inpLangauge'>Langauge</label>
+                <div class='col-xs-6 col-sm-9 col-md-10 col-lg-6'>
+                  <input type='text' class='form-control input-lg typeahead' name='inpLangauge' placeholder='Langauge ...' ng-model='inpLangauge'>
+                  <span ng-show='frmLanguageLink.inpLangauge.$dirty && frmLanguageLink.inpLangauge.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpoptLevel'>Level</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <select class='form-control' name='inpoptLevel'>
+                    <option value='1'>Basic</option>
+                    <option value='2'>Intermediate</option>
+                    <option value='3'>Business Level</option>
+                    <option value='4'>Fleunt</option>
+                  </select>
+                  <span ng-show='frmCountries.inpoptLevel.$dirty && frmCountries.inpoptLevel.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+            </form>
+          </div>
+          <!-- ------ -->
+          <div class='modal-footer'>
+            <button class='btn pull-right btn-default' data-toggle='modal' data-dismiss='modal' aria-hidden='true'><i class='fa fa-times'></i> Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div id='ModalConsultants' class='modal fade' tabindex='-1' role='dialog' aria-hidden='true'>
+      <div class='modal-dialog modal-lg'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+          <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span></button>
+            <h4 class='modal-title'>Consultants draft form</h4>
+          </div>
+          <!-- ------ -->
+          <div class='modal-body'>
+            <form class='form-horizontal' role='form' name='frmConsultants'>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 input-lg control-label' for='inpConsultantName'>Consultant Name</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='text' class='form-control input-lg' name='inpConsultantName' maxlength='45' minlength='1' placeholder='Consultant Name' ng-trim='true' ng-maxlength='45' ng-model='inpConsultantName'>
+                  <span ng-show='frmConsultants.inpConsultantName.$dirty && frmConsultants.inpConsultantName.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 input-lg control-label' for='inpDefaultShare'>Default Share</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='number' name='inpDefaultShare' class='form-control input-lg' maxlength='8' placeholder='0' ng-pattern='FloatRegEx' ng-trim='true' ng-maxlength='8' ng-model='inpDefaultShare'>
+                  <span ng-show='frmConsultants.inpDefaultShare.$dirty && frmConsultants.inpDefaultShare.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+            </form>
+          </div>
+          <!-- ------ -->
+          <div class='modal-footer'>
+            <button class='btn pull-right btn-default' data-toggle='modal' data-dismiss='modal' aria-hidden='true'><i class='fa fa-times'></i> Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-
+    <div id='ModalPrescriptions' class='modal fade' tabindex='-1' role='dialog' aria-hidden='true'>
+      <div class='modal-dialog modal-lg'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+          <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span></button>
+            <h4 class='modal-title'>Prescriptions draft form</h4>
+          </div>
+          <!-- ------ -->
+          <div class='modal-body'>
+            <form class='form-horizontal' role='form' name='frmPrescriptions'>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpDescription'>Description</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='text' class='form-control' name='inpDescription' maxlength='60' minlength='1' placeholder='Description' ng-trim='true' ng-maxlength='60' ng-model='inpDescription'>
+                  <span ng-show='frmPrescriptions.inpDescription.$dirty && frmPrescriptions.inpDescription.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpDosage'>Dosage</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='text' class='form-control' name='inpDosage' maxlength='45' minlength='1' placeholder='Dosage' ng-trim='true' ng-maxlength='45' ng-model='inpDosage'>
+                  <span ng-show='frmPrescriptions.inpDosage.$dirty && frmPrescriptions.inpDosage.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpMorning'>Morning</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpMorning' ng-model='inpMorning'>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpAfternoon'>Afternoon</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpAfternoon' ng-model='inpAfternoon'>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpNight'>Night</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpNight' ng-model='inpNight'>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpDuration'>Duration</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='text' class='form-control' name='inpDuration' maxlength='10' minlength='1' placeholder='Duration' ng-trim='true' ng-maxlength='10' ng-model='inpDuration'>
+                  <span ng-show='frmPrescriptions.inpDuration.$dirty && frmPrescriptions.inpDuration.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpDurationUnits'>Duration Units</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <input type='text' class='form-control typeahead' name='inpDurationUnits' placeholder='Duration Units ...' ng-model='inpDurationUnits'>
+                  <span ng-show='frmPrescriptions.inpDurationUnits.$dirty && frmPrescriptions.inpDurationUnits.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpBeforeAfterMeal'>Before After Meal</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <div class='btn-group' data-toggle='buttons' name='inpBeforeAfterMeal' style='color:#000;'>
+                    <label data-loading-text='loading...' class='btn btn-default active'><input type='radio' name='optionsBeforeAfterMeal' data-sel='1'>Before Meal</label>
+                    <label data-loading-text='loading...' class='btn btn-default'       ><input type='radio' name='optionsBeforeAfterMeal' data-sel='2'>With Meal</label>
+                    <label data-loading-text='loading...' class='btn btn-default'       ><input type='radio' name='optionsBeforeAfterMeal' data-sel='3'>After Meal</label>
+                  </div>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpInstructions'>Instructions</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                  <textarea class='form-control' name='inpInstructions' ng-model='inpInstructions'></textarea>
+                </div>
+              </div>
+              <!-- xxx -->
+            </form>
+          </div>
+          <!-- ------ -->
+          <div class='modal-footer'>
+            <button class='btn pull-right btn-default' data-toggle='modal' data-dismiss='modal' aria-hidden='true'><i class='fa fa-times'></i> Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <script src='assets/js/jquery-1.11.1.min.js'></script>
     <script src='assets/js/bootstrap.min.js'></script>
     <script src='assets/js/bootstrap-switch.min.js'></script>
+    <script src='assets/js/redactor.js'></script>
     <script>
     $(document).ready(function()
       {
       $('body').scrollspy({ target: '#navbar' });
-      $(".nav li a[href!='#']").on('click', function(e)
+      //--
+      /*$(".nav li a[href!='#']").on('click', function(e)
+        {
+        e.preventDefault();
+        $('html, body').animate({scrollTop: $(this.hash).offset().top-50 }, 500, 'linear' );
+        });*/
+      //--
+      $("body a[href^='#']").on('click', function(e)
         {
         e.preventDefault();
         $('html, body').animate({scrollTop: $(this.hash).offset().top-50 }, 500, 'linear' );
@@ -1722,6 +2137,7 @@
       $('.list-unstyled  > li').prepend("<i class='fa fa-circle'></i>&nbsp;");
       //--
       $('.form-horizontal input[type=checkbox]').bootstrapSwitch();
+      $('textarea').redactor({ autoresize: false, minHeight: 100});
       });
     </script>
   </body>

@@ -615,6 +615,7 @@ CREATE TABLE IF NOT EXISTS `RCCMain`.`ServicesOffered` (
   `idWorkSchedule` INT UNSIGNED NULL,
   `idLKServiceName` INT UNSIGNED NULL,
   `idLkCategory` INT UNSIGNED NULL,
+  `flgJustOfferCallForPrice` VARCHAR(1) NULL,
   `flgPriceAdvertised` VARCHAR(1) NULL,
   `idLkCurrency` INT UNSIGNED NULL,
   `InitialCharge` FLOAT UNSIGNED NULL,
@@ -708,17 +709,17 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `RCCMain`.`ServicesHeader`
+-- Table `RCCMain`.`Engagement`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `RCCMain`.`ServicesHeader` (
-  `idServicesHeader` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+CREATE TABLE IF NOT EXISTS `RCCMain`.`Engagement` (
+  `idEngagement` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `flgIsEstimate` VARCHAR(1) NULL,
   `idAppointment` INT UNSIGNED NULL,
   `idCarer` INT UNSIGNED NULL,
   `idCustomer` INT UNSIGNED NULL,
   `idLkCurrency` INT UNSIGNED NULL,
   `BillTotal` FLOAT UNSIGNED NULL,
-  PRIMARY KEY (`idServicesHeader`),
+  PRIMARY KEY (`idEngagement`),
   INDEX `fk_ServicesHeader_1_idx` (`idCustomer` ASC),
   INDEX `fk_ServicesHeader_2_idx` (`idCarer` ASC),
   CONSTRAINT `fk_ServicesHeader_1`
@@ -736,10 +737,10 @@ DEFAULT CHARACTER SET = dec8;
 
 
 -- -----------------------------------------------------
--- Table `RCCMain`.`ServicesDetails`
+-- Table `RCCMain`.`EngagementDetails`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `RCCMain`.`ServicesDetails` (
-  `idServicesDetail` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+CREATE TABLE IF NOT EXISTS `RCCMain`.`EngagementDetails` (
+  `idEngagementDetail` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `idCostsHeader` INT UNSIGNED NULL,
   `idPrescription` INT UNSIGNED NULL,
   `idConsultant` INT UNSIGNED NULL,
@@ -748,11 +749,11 @@ CREATE TABLE IF NOT EXISTS `RCCMain`.`ServicesDetails` (
   `Discount` FLOAT UNSIGNED NULL,
   `LineTotal` FLOAT UNSIGNED NULL,
   `JSONDetails` MEDIUMTEXT NULL,
-  PRIMARY KEY (`idServicesDetail`),
+  PRIMARY KEY (`idEngagementDetail`),
   INDEX `fk_CostDetails_1_idx` (`idCostsHeader` ASC),
   CONSTRAINT `fk_CostDetails_1`
     FOREIGN KEY (`idCostsHeader`)
-    REFERENCES `RCCMain`.`ServicesHeader` (`idServicesHeader`)
+    REFERENCES `RCCMain`.`Engagement` (`idEngagement`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
