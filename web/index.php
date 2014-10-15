@@ -136,7 +136,7 @@
           <li>This web application is <span class='label label-default'>multi language</span> and <span class='label label-default'>multi current</span> and <span class='label label-default'>multi country</span> and <span class='label label-default'>multi time zone</span></li>
           <li>All datetime fields stored on the database must be stored in the time zone of the hosting company</li>
           <li>Each one of the Carer pages, once logged on, should have a video that appears in a modal. Their profile has a <span class='label label-default'>Hide Help Btn</span> option to remove the per-page video should they choose</li>
-          <li>references - <a href='http://angular-ui.github.io/bootstrap/' target='_blank'>Angular Bootstrap</a></li>
+          <li>references - <a href='http://angular-ui.github.io/bootstrap/' target='_blank'>Angular Bootstrap</a> <i class="fa fa-ellipsis-v"></i> <a href='http://meanjs.org/' target='_blank'>Mean Stack</a> <i class="fa fa-ellipsis-v"></i> <a href='http://fortawesome.github.io/Font-Awesome/icons/' target='_blank'>FontAwesome</a> <i class="fa fa-ellipsis-v"></i> <a href='http://minetheme.com/Endless1.5.1/' target='_blank'>Endless Theme</a> <i class="fa fa-ellipsis-v"></i> <a href='http://getbootstrap.com/' target='_blank'>Bootstrap 3</a></li>
         </ul>
         <!-- xxx -->
         <section>
@@ -492,11 +492,12 @@
             <h2><span class='label label-danger animated fadeIn'>Services</span></h4>
             <p>Services</p>
             <ul class="list-unstyled">
-              <li>Carers are able to supply services with travel. So a consultation at the patients home should be charged as</li>
+              <li>Carers are able to supply services with travel. So a consultation at the patients home should be charged as
               <ul>
                 <li>travel</li>
                 <li>consultation</li>
-              </ul>
+              </ul></li>
+              <li>Carers must be able to copy services provided at the same clinic from another doctor</li>
             </ul>
           </div>
           <!-- xxx -->
