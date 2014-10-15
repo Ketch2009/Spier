@@ -1,0 +1,114 @@
+table.tablesorter {  font-size: 12px !important;}
+.tablesorter tbody tr:hover { cursor: pointer;}
+.GoWhite {color: #fff;  text-shadow: 0 1px rgba(0, 0, 0, 0.5);}
+.GoBlack {color: #000;  text-shadow: #ccc 0.1em 0.1em 0.1em;}
+.note {font-style: italic;font-size: 12px;padding: 0px 0px 10px 0px;}
+.btn.active, .btn:active {  background-color: #D9534F; color: #fff;  text-shadow: 0 1px rgba(0, 0, 0, 0.5);}
+.lbk { background-image:url('../images/bgfusion.png'); }
+.prettyprint
+  {
+  padding: 8px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  }
+transform: translate3d(0,0,0);
+.MyShadow
+  {
+  -moz-box-shadow:    3px 3px 5px 6px #333;
+  -webkit-box-shadow: 3px 3px 5px 6px #333;
+  box-shadow:         3px 3px 5px 6px #333;
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.DropShadow(OffX=5, OffY=5, Color=#333);
+  }
+
+.Mywell {
+min-height: 20px;
+padding: 19px;
+margin-bottom: 20px;
+background-color: #fff;
+border: 1px solid #e3e3e3;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+#margin: 0 1em 1em 0;
+-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6), inset 1px 0px 0px rgba(255, 255, 255, 0.1), inset -1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px rgba(255, 255, 255, 0.1);
+-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6), inset 1px 0px 0px rgba(255, 255, 255, 0.1), inset -1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px rgba(255, 255, 255, 0.1);
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6), inset 1px 0px 0px rgba(255, 255, 255, 0.1), inset -1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px rgba(255, 255, 255, 0.1);
+}
+.Greywell {
+min-height: 20px;
+padding: 19px;
+margin-bottom: 20px;
+border: 1px solid #e3e3e3;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6), inset 1px 0px 0px rgba(255, 255, 255, 0.1), inset -1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px rgba(255, 255, 255, 0.1);
+-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6), inset 1px 0px 0px rgba(255, 255, 255, 0.1), inset -1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px rgba(255, 255, 255, 0.1);
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6), inset 1px 0px 0px rgba(255, 255, 255, 0.1), inset -1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px rgba(255, 255, 255, 0.1);
+}
+.Greywell a {color:#000;}
+.Greywell li a:hover {background-color:#0088cc;color:#fff;text-shadow:none;}
+.CornerAll {
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+}
+.UnSelectable {
+   -ms-user-select: none; /* IE 10+ */
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   user-select: none;
+}
+.stitch
+  {
+  border: 11px solid transparent;
+  border-width: 9px;
+  -webkit-border-image:url('../images/bg_stitch.png') 9 repeat;
+  -moz-border-image:url('../images/bg_stitch.png') 9 repeat;
+  -o-border-image:url('../images/bg_stitch.png') 9 repeat;
+  border-image:url('../images/bg_stitch.png') 9 repeat;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  border-radius: 12px;
+  }
+.stitchwhite
+  {
+  border: 11px solid transparent;
+  border-width: 9px;
+  -webkit-border-image:url('../images/bg_stitch_white.png') 9 repeat;
+  -moz-border-image:url('../images/bg_stitch_white.png') 9 repeat;
+  -o-border-image:url('../images/bg_stitch_white.png') 9 repeat;
+  border-image:url('../images/bg_stitch_white.png') 9 repeat;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  border-radius: 12px;
+  }
+.HoverDark:hover
+  {
+  background-color:#000;
+  -webkit-transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear;
+  -ms-transition: background 0.5s linear;
+  -o-transition: background 0.5s linear;
+  transition: background 0.5s linear;
+  }
+.HoverDark {background:url(../images/trn66png.png);}
+#MyBody .mc {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.fa.form-control-feedback {
+    line-height: 34px; /* @input-height-base; */
+}
+.input-sm ~ .fa.form-control-feedback {
+    line-height: 30px; /* @input-height-base; */
+}
+.input-lg ~ .fa.form-control-feedback {
+    line-height: 46px; /* @input-height-base; */
+}
