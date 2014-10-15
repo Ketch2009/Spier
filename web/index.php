@@ -259,8 +259,18 @@
             <h2><span class='label label-danger animated fadeIn'>Customer Historic bookings</span></h4>
             <p>Historic bookings</p>
             <ul class="list-unstyled">
-              <li>...</li>
+              <li>A non-changeable view of previous appointments that have been booked</li>
             </ul>
+            <table class='table table-hover'>
+              <thead>
+                <tr><th>When Day</th><th>Start Time</th><th>End Time</th><th>Carer</th><th>Carer Accepted</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>25/03/2014 <span class='label label-default'>3 days ago</span></td><td>10h:00</td><td>10h:15</td><td>Dr. A Smith</td><td>Pending</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </section>
         <!-- xxx -->
