@@ -1644,7 +1644,7 @@
             <form class='form-horizontal' role='form' name='frmQualsAndMemberships'>
               <!-- xxx -->
               <div class='form-group has-feedback'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 input-lg control-label' for='inpName'>Name</label>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 input-lg control-label' for='inpName'>Institution Name</label>
                 <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
                   <input type='text' class='form-control input-lg typeahead' name='inpName' placeholder='Name ...' ng-model='inpName'>
                   <span ng-show='frmQualsAndMemberships.inpName.$dirty && frmQualsAndMemberships.inpName.$invalid' class='fa fa-times form-control-feedback'></span>
@@ -1652,11 +1652,11 @@
               </div>
               <!-- xxx -->
               <div class='form-group has-feedback'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 input-lg control-label' for='inpQualificationOrMembership'>Qualification Or Membership</label>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 input-lg control-label' for='inpQualificationOrMembership'>Type</label>
                 <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
                   <select class='form-control input-lg' name='inpQualificationOrMembership'>
-                    <option value='A'>One</option>
-                    <option value='B'>Two</option>
+                    <option value='A'>Qualification</option>
+                    <option value='B'>Membership</option>
                   </select>
                   <span ng-show='frmQualsAndMemberships.inpQualificationOrMembership.$dirty && frmQualsAndMemberships.inpQualificationOrMembership.$invalid' class='fa fa-times form-control-feedback'></span>
                 </div>

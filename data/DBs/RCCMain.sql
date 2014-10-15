@@ -447,7 +447,7 @@ CREATE TABLE IF NOT EXISTS `RCCMain`.`QualsAndMemberships` (
   `idQualsAndMembership` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `idCarer` INT UNSIGNED NULL,
   `idLkName` INT UNSIGNED NULL,
-  `optQualificationOrMembership` VARCHAR(1) NULL,
+  `boptQualificationOrMembership` VARCHAR(1) NULL,
   `DateAchieved` DATE NULL,
   `idLkTreatment` INT UNSIGNED NULL,
   `RefNumber` VARCHAR(45) NULL,
