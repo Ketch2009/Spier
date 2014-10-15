@@ -160,7 +160,7 @@
                   <input class="form-control" type="text" placeholder="Location">
                 </div>
               </div>
-              <button type="submit" class="btn btn-default">Sign in</button>
+              <button type="submit" class="btn btn-default"><i class="fa fa-search"></i> Search</button>
             </form>
           </div>
           <!-- xxx -->
