@@ -82,7 +82,7 @@
                 <li><a href="#Consultants" tabindex="-1">Consultants</a></li>
                 <li><a href="#Endorsements" tabindex="-1">Endorsements</a></li>
                 <li><a href="#Prescriptions" tabindex="-1">Prescriptions</a></li>
-                <li><a href="#Messages" tabindex="-1">Default essages</a></li>
+                <li><a href="#Messages" tabindex="-1">Default Messages</a></li>
                 <li class="divider"></li>
                 <li><a href="#WorkSchedules" tabindex="-1">Work Schedules</a></li>
                 <li><a href="#Services" tabindex="-1">Services</a></li>
@@ -169,7 +169,6 @@
           <!-- xxx -->
           <div id="JoinUs">
             <h2><span class='label label-danger animated fadeIn'>Join Us</span></h4>
-            <p>Join Us</p>
             <ul class="list-unstyled">
               <li>The most important feature of a Carer is that they have their own <span class='label label-default'>Custom URL</span>, liked linked in that they can set.</li>
               <li>The DB field StatusStage stored the stage of joining as regards extras the person can do. Suggested ideas must pop up any annoy the carer into doing them. suggested status's are:
@@ -185,6 +184,7 @@
                   <li>Add to G+ profile</li>
                   <li>Like on Facebook</li>
                   <li>Share Profile on FB</li>
+                  <li>Services booked "ServicesOffered.CountServicesBooked"</li>
                 </ul>
               </li>
               <li>The password should be stored with the Carer. Upon change an email should go to the Carer default email address. the Login email - is from contact methods, as many as the Carer wants from the <button class='btn btn-default' data-toggle='modal' data-target='#ModalContactMethods'><i class='fa fa-external-link-square'></i> Initial ContactMethods Form</button></li>
@@ -202,7 +202,6 @@
           <!-- xxx -->
           <div id="TandC">
             <h2><span class='label label-danger animated fadeIn'>Terms And Conditions</span></h4>
-            <p>Terms And Conditions</p>
             <ul class="list-unstyled">
               <li>Terms and conditions must be available as a link on each page. </li>
               <li>Each Carer <span class='label label-default'>must</span> agree them upon signup.</li>
@@ -212,7 +211,6 @@
           <!-- xxx -->
           <div id="Login">
             <h2><span class='label label-danger animated fadeIn'>Login</span></h4>
-            <p>Login</p>
             <ul class="list-unstyled">
               <li>User can be remembered</li>
               <li>join Carer membership</li>
@@ -256,12 +254,13 @@
                   <li>Web Country -  this helps with auto populating the locale for the next visit. sample of data for a locale <button class='btn btn-default' data-toggle='modal' data-target='#ModalCountries'><i class='fa fa-external-link-square'></i> Initial Countries Form</button></li>
                 </ul>
               </li>
+              <li>Each booking of a service requires a increment in the table ServicesOffered for field inpCountServicesBooked</li>
+              <li>An appointment should be entered. Fill in as much of the form from the sleection of the search results. <button class='btn btn-default' data-toggle='modal' data-target='#ModalAppointment'><i class='fa fa-external-link-square'></i> Initial Appointment Form</button></li>
             </ul>
           </div>
           <!-- xxx -->
           <div id="Hbookings">
             <h2><span class='label label-danger animated fadeIn'>Customer Historic bookings</span></h4>
-            <p>Historic bookings</p>
             <ul class="list-unstyled">
               <li>A non-changeable view of previous appointments that have been booked</li>
             </ul>
@@ -283,7 +282,6 @@
           <!-- xxx -->
           <div id="Billed">
             <h2><span class='label label-danger animated fadeIn'>Billed</span></h4>
-            <p>Billed</p>
             <ul class="list-unstyled">
               <li>Similar to lybrate but if there are graphs it should use D3.js</li>
             </ul>
@@ -291,7 +289,6 @@
           <!-- xxx -->
           <div id="BilledD">
             <h2><span class='label label-danger animated fadeIn'>Billed Detail</span></h4>
-            <p>Billed Detail</p>
             <ul class="list-unstyled">
               <li>Similar to lybrate but if there are graphs it should use D3.js</li>
             </ul>
@@ -299,7 +296,6 @@
           <!-- xxx -->
           <div id="Due In">
             <h2><span class='label label-danger animated fadeIn'>DueIn</span></h4>
-            <p>DueIn</p>
             <ul class="list-unstyled">
               <li>Similar to lybrate but if there are graphs it should use D3.js</li>
             </ul>
@@ -307,7 +303,6 @@
           <!-- xxx -->
           <div id="Overdue">
             <h2><span class='label label-danger animated fadeIn'>Overdue income</span></h4>
-            <p>Overdue income</p>
             <ul class="list-unstyled">
               <li>Similar to lybrate but if there are graphs it should use D3.js</li>
             </ul>
@@ -323,7 +318,6 @@
           <!-- xxx -->
           <div id="Intensity">
             <h2><span class='label label-danger animated fadeIn'>Booking Intensity</span></h4>
-            <p>Booking Intensity</p>
             <ul class="list-unstyled">
               <li>Similar to lybrate but if there are graphs it should use D3.js</li>
             </ul>
@@ -331,7 +325,6 @@
           <!-- xxx -->
           <div id="Trends">
             <h2><span class='label label-danger animated fadeIn'>Booking Trends</span></h4>
-            <p>Booking Trends</p>
             <ul class="list-unstyled">
               <li>Similar to lybrate but if there are graphs it should use D3.js</li>
             </ul>
@@ -339,7 +332,6 @@
           <!-- xxx -->
           <div id="ChargePer">
             <h2><span class='label label-danger animated fadeIn'>Charge per Customer</span></h4>
-            <p>Charge per Customer</p>
             <ul class="list-unstyled">
               <li>Similar to lybrate but if there are graphs it should use D3.js</li>
             </ul>
@@ -351,7 +343,6 @@
           <h1><span class='label label-default'>Profile</span></h1>
           <div id="AboutMe">
             <h2><span class='label label-danger animated fadeIn'>AboutMe</span></h4>
-            <p>AboutMe</p>
             <ul class="list-unstyled">
               <li>Carers and Customers can have multiple contact methods, eg phone, email – see DB.</li>
             </ul>
@@ -360,7 +351,6 @@
           <!-- xxx -->
           <div id="MyPlan">
             <h2><span class='label label-danger animated fadeIn'>My Plan</span></h4>
-            <p>My Plan</p>
             <ul class="list-unstyled">
               <li>The carer plans are preset. Carers only choose which they would like. Plans should be displayed like a hosting company shows options of purchase eg, <a href='http://minetheme.com/Endless1.5.1/pricing.html' target='_blank'>Sample display required</a></li>
               <li>Upon joining the Carer should be given the best plan, as a trial. So set ExpiryOfTrial in the Carer profile.</li>
@@ -371,7 +361,6 @@
           <!-- xxx -->
           <div id="Business">
             <h2><span class='label label-danger animated fadeIn'>Business</span></h4>
-            <p>Business</p>
             <ul class="list-unstyled">
               <li>This can also be referred to as the clinic or practise. But should also be for the business of the ambulance provider</li>
               <li>Pictures should be able to be uploaded (and this should be encouraged)</li>
@@ -380,12 +369,12 @@
             <button class='btn btn-default' data-toggle='modal' data-target='#ModalBusinesses'><i class='fa fa-external-link-square'></i> Initial Businesses Form</button>
             Once the business is entered the Carer should enter how this business effect them.
             <button class='btn btn-default' data-toggle='modal' data-target='#ModalCarerBusinessJoin'><i class='fa fa-external-link-square'></i> Initial CarerBusinessJoin Form</button><br>
-            Note that the Business can also have multiple contact methods, eg emailo, phone <button class='btn btn-default' data-toggle='modal' data-target='#ModalContactMethods'><i class='fa fa-external-link-square'></i> Initial ContactMethods Form</button> to be used for <span class='label label-default'>call for appointment/price</span>
+            Note that the Business can also have multiple contact methods, eg emailo, phone <button class='btn btn-default' data-toggle='modal' data-target='#ModalContactMethods'><i class='fa fa-external-link-square'></i> Initial ContactMethods Form</button> to be used for <span class='label label-default'>call for appointment/price</span><br>
+            Also, each business must have an associated <button class='btn btn-default' data-toggle='modal' data-target='#ModalAddresses'><i class='fa fa-external-link-square'></i> Initial Addresses Form</button>. This is stored in a seperate table and linked to the Business record.
           </div>
           <!-- xxx -->
           <div id="Colleagues">
             <h2><span class='label label-danger animated fadeIn'>Colleagues</span></h4>
-            <p>Colleagues</p>
             <ul class="list-unstyled">
               <li>Once the business has been entered the Carer can enter in colleagues to the <span class='label label-default'>same</span> entered business. This simply sends an invitation asking them to join.</li>
               <li>Details of the invitation should be stored to speed up form entry when the colleague responds to the invitation.</li>
@@ -408,7 +397,6 @@
           <!-- xxx -->
           <div id="PayMethods">
             <h2><span class='label label-danger animated fadeIn'>Pay Methods</span></h4>
-            <p>Pay Methods</p>
             <ul class="list-unstyled">
               <li>A Carer should be able to change thir payment method at any time.</li>
               <li>This table of information should be RSA encrypted with the number of record ID of the carer (idPayMethods)</li>
@@ -418,7 +406,6 @@
           <!-- xxx -->
           <div id="Qualifications">
             <h2><span class='label label-danger animated fadeIn'>Qualifications and Memberships</span></h4>
-            <p>Qualifications</p>
             <ul class="list-unstyled">
               <li>This is a way for the Carer to boast about what they have achieved</li>
               <li>Each Carer should have their own URL set, possible a custom URL set with CustomURL in their profile</li>
@@ -429,7 +416,6 @@
           <!-- xxx -->
           <div id="Hospitals">
             <h2><span class='label label-danger animated fadeIn'>Affiliated Hospitals</span></h4>
-            <p>Hospitals</p>
             <ul class="list-unstyled">
               <li>This is just to show on the public profile dash page</li>
             </ul>
@@ -473,7 +459,7 @@
           <div id="Prescriptions">
             <h2><span class='label label-danger animated fadeIn'>Prescriptions</span></h4>
             <ul class="list-unstyled">
-              <li>Prescriptions are entered so that is only for fast entering <span class='label label-default'>engagement</span> details <a href="#SectEng">Engagements</a>.</li></li>
+              <li>Prescriptions are entered so that is only for fast entering <span class='label label-default'>engagement</span> details <a href="#SectEng">Engagements</a>.</li>
             </ul>
             <button class='btn btn-default' data-toggle='modal' data-target='#ModalPrescriptions'><i class='fa fa-external-link-square'></i> Initial Prescriptions Form</button>
           </div>
@@ -481,15 +467,45 @@
           <div id="Messages">
             <h2><span class='label label-danger animated fadeIn'>Default Messages</span></h4>
             <ul class="list-unstyled">
-              <li>...</li>
+              <li>These are the outgoing messages sent to Customers and Carers</li>
+              <li>eg, When a Carer joins - we thank with a message.</li>
+              <li>eg, When a Carer changes password - we notify them.</li>
+              <li>Most of the messages are for the customers - especially on appointments</li>
+              <li>Message send triggers :
+                <ul>
+                  <li>Thank you for joining</li>
+                  <li>Your password was changed</li>
+                  <li>Your profile has been viewed ### times this month</li>
+                  <li>Appointment Created</li>
+                  <li>Appointment Cancelled</li>
+                  <li>Appointment Changed</li>
+                  <li>Appointment Reminder</li>
+                  <li>Missed Appointment</li>
+                  <li>Carer Daily Appointment Summary</li>
+                  <li>Payment Acceptance</li>
+                  <li>Payment Reminder</li>
+                  <li>Prescription</li>
+                  <li>Recommendation</li>
+                  <li>Birthday Wishes</li>
+                  <li>1 month check up</li>
+                  <li>3 monthly check up</li>
+                  <li>6 monthly check up</li>
+                  <li>more will be added.... so please have the adding process made easy</li>
+                </ul>
+              </li>
             </ul>
+            <button class='btn btn-default' data-toggle='modal' data-target='#ModalMessageDefaults'><i class='fa fa-external-link-square'></i> Initial MessageDefaults Form</button>
           </div>
           <!-- xxx -->
           <div id="WorkSchedules">
             <h2><span class='label label-danger animated fadeIn'>Work Schedules</span></h4>
             <ul class="list-unstyled">
-              <li>...</li>
+              <li>Services cannot be entered unless theyu belong to a work schedule.</li>
+              <li>A work schedule would be something like [Mon - Fri] [8am - 5pm]</li>
+              <li>A carer can enter 1 or many</li>
+              <li>The carer then attached the services offered under the work schedules (again 1 or many service to 1 work schedule)</li>
             </ul>
+            <button class='btn btn-default' data-toggle='modal' data-target='#ModalWorkSchedules'><i class='fa fa-external-link-square'></i> Initial WorkSchedules Form</button>
           </div>
           <!-- xxx -->
           <div id="Services">
@@ -499,6 +515,12 @@
               <ul>
                 <li>travel</li>
                 <li>consultation</li>
+                <li>Initial time and charge</li>
+                <li>Initial Distance and charge</li>
+                <li>Additional time and unit</li>
+                <li>Additional distance and unit</li>
+                <li>an option to charge the greator of either</li>
+                <li>an option to not advertise the price, or enter it, and just state <span class='label label-default'>Call for price</span> with the business phone number to call</li>
               </ul></li>
               <li>Carers must be able to copy services provided at the same clinic from another doctor</li>
             </ul>
@@ -509,7 +531,10 @@
             <h2><span class='label label-danger animated fadeIn'>Service Extras</span></h4>
             <ul class="list-unstyled">
               <li>add available extras – eg oxygen for ambulance trips</li>
+              <li>The customer cannot BOOK these extras. But they should know they are available for booking</li>
+              <li>The currency should be the same as the serviceofferec</li>
             </ul>
+            <button class='btn btn-default' data-toggle='modal' data-target='#ModalAvailableExtras'><i class='fa fa-external-link-square'></i> Initial AvailableExtras Form</button>
           </div>
           <!-- xxx -->
         </section>
@@ -1700,150 +1725,148 @@
             <form class='form-horizontal' role='form' name='frmServicesOffered'>
               <!-- xxx -->
               <div class='form-group has-feedback'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpCategory'>Category</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
-                  <input type='text' class='form-control typeahead' name='inpCategory' placeholder='Category ...' ng-model='inpCategory'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpCategory'>Category</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
+                  <input type='text' class='form-control typeahead' name='inpCategory' placeholder='Category off lookup, eg Dentistry, Ambulance, Doctor, Massage ...' ng-model='inpCategory'>
                   <span ng-show='frmServicesOffered.inpCategory.$dirty && frmServicesOffered.inpCategory.$invalid' class='fa fa-times form-control-feedback'></span>
                 </div>
               </div>
               <!-- xxx -->
-              <div class='form-group'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpPriceAdvertised'>Price Advertised</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
-                  <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpPriceAdvertised' ng-model='inpPriceAdvertised'>
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpServiceName'>Service Name</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
+                  <input type='text' class='form-control typeahead' name='inpServiceName' placeholder='eg Home Visit ...' ng-model='inpServiceName'>
+                  <span ng-show='frmServicesOffered.inpServiceName.$dirty && frmServicesOffered.inpServiceName.$invalid' class='fa fa-times form-control-feedback'></span>
                 </div>
               </div>
               <!-- xxx -->
+              <div class='form-group'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpPriceAdvertised'>Price Advertised</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
+                  <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpPriceAdvertised' ng-model='inpPriceAdvertised'>
+                </div>
+              </div>
+              <hr>
+              <!-- xxx -->
               <div class='form-group has-feedback'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpCurrency'>Currency</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpCurrency'>Currency</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input type='text' class='form-control typeahead' name='inpCurrency' placeholder='Currency ...' ng-model='inpCurrency'>
                   <span ng-show='frmServicesOffered.inpCurrency.$dirty && frmServicesOffered.inpCurrency.$invalid' class='fa fa-times form-control-feedback'></span>
                 </div>
               </div>
               <!-- xxx -->
               <div class='form-group has-feedback'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpInitialCharge'>Initial Charge</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpInitialCharge'>Initial Charge</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input type='number' name='inpInitialCharge' class='form-control' maxlength='8' placeholder='0' ng-pattern='FloatRegEx' ng-trim='true' ng-maxlength='8' ng-model='inpInitialCharge'>
                   <span ng-show='frmServicesOffered.inpInitialCharge.$dirty && frmServicesOffered.inpInitialCharge.$invalid' class='fa fa-times form-control-feedback'></span>
                 </div>
               </div>
               <!-- xxx -->
               <div class='form-group'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpVariableCharging'>Variable Charging</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpVariableCharging'>Variable Charging</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpVariableCharging' ng-model='inpVariableCharging'>
                 </div>
               </div>
+              <hr>
               <!-- xxx -->
               <div class='form-group'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpChargeTime'>Charge Time</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpChargeTime'>Charge Time</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpChargeTime' ng-model='inpChargeTime'>
                 </div>
               </div>
               <!-- xxx -->
               <div class='form-group has-feedback'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpInitialTimeMins'>Initial Time Mins</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpInitialTimeMins'>Initial Time Mins</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input type='number' name='inpInitialTimeMins' class='form-control' maxlength='5' placeholder='0' ng-pattern='IntRegEx' ng-trim='true' ng-maxlength='5' ng-model='inpInitialTimeMins'>
                   <span ng-show='frmServicesOffered.inpInitialTimeMins.$dirty && frmServicesOffered.inpInitialTimeMins.$invalid' class='fa fa-times form-control-feedback'></span>
                 </div>
               </div>
+              <hr>
               <!-- xxx -->
               <div class='form-group'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpChargeTravel'>Charge Travel</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpChargeTravel'>Charge Travel</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpChargeTravel' ng-model='inpChargeTravel'>
                 </div>
               </div>
               <!-- xxx -->
               <div class='form-group has-feedback'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpInitialDistance'>Initial Distance</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpInitialDistance'>Initial Distance</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input type='number' name='inpInitialDistance' class='form-control' maxlength='5' placeholder='0' ng-pattern='IntRegEx' ng-trim='true' ng-maxlength='5' ng-model='inpInitialDistance'>
                   <span ng-show='frmServicesOffered.inpInitialDistance.$dirty && frmServicesOffered.inpInitialDistance.$invalid' class='fa fa-times form-control-feedback'></span>
                 </div>
               </div>
+              <hr>
               <!-- xxx -->
               <div class='form-group'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpInitTimeOrDistance'>Init Time Or Distance</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpInitTimeOrDistance'>Init Time Or Distance</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpInitTimeOrDistance' ng-model='inpInitTimeOrDistance'>
                 </div>
               </div>
               <!-- xxx -->
               <div class='form-group'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpAdditionalTime'>Additional Time</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpAdditionalTime'>Additional Time</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpAdditionalTime' ng-model='inpAdditionalTime'>
                 </div>
               </div>
               <!-- xxx -->
               <div class='form-group has-feedback'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpAdditionalTimeSlice'>Additional Time Slice</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpAdditionalTimeSlice'>Additional Time Slice</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input type='number' name='inpAdditionalTimeSlice' class='form-control' maxlength='5' placeholder='0' ng-pattern='IntRegEx' ng-trim='true' ng-maxlength='5' ng-model='inpAdditionalTimeSlice'>
                   <span ng-show='frmServicesOffered.inpAdditionalTimeSlice.$dirty && frmServicesOffered.inpAdditionalTimeSlice.$invalid' class='fa fa-times form-control-feedback'></span>
                 </div>
               </div>
               <!-- xxx -->
               <div class='form-group has-feedback'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpAdditionalTimeCharge'>Additional Time Charge</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpAdditionalTimeCharge'>Additional Time Charge</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input type='number' name='inpAdditionalTimeCharge' class='form-control' maxlength='8' placeholder='0' ng-pattern='FloatRegEx' ng-trim='true' ng-maxlength='8' ng-model='inpAdditionalTimeCharge'>
                   <span ng-show='frmServicesOffered.inpAdditionalTimeCharge.$dirty && frmServicesOffered.inpAdditionalTimeCharge.$invalid' class='fa fa-times form-control-feedback'></span>
                 </div>
               </div>
+              <hr>
               <!-- xxx -->
               <div class='form-group'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpAdditionalDistance'>Additional Distance</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpAdditionalDistance'>Additional Distance</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpAdditionalDistance' ng-model='inpAdditionalDistance'>
                 </div>
               </div>
               <!-- xxx -->
               <div class='form-group has-feedback'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpAdditionalDistanceSlice'>Additional Distance Slice</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpAdditionalDistanceSlice'>Additional Distance Slice</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input type='number' name='inpAdditionalDistanceSlice' class='form-control' maxlength='5' placeholder='0' ng-pattern='IntRegEx' ng-trim='true' ng-maxlength='5' ng-model='inpAdditionalDistanceSlice'>
                   <span ng-show='frmServicesOffered.inpAdditionalDistanceSlice.$dirty && frmServicesOffered.inpAdditionalDistanceSlice.$invalid' class='fa fa-times form-control-feedback'></span>
                 </div>
               </div>
               <!-- xxx -->
               <div class='form-group has-feedback'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpAdditionalDistanceCharge'>Additional Distance Charge</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpAdditionalDistanceCharge'>Additional Distance Charge</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input type='number' name='inpAdditionalDistanceCharge' class='form-control' maxlength='8' placeholder='0' ng-pattern='FloatRegEx' ng-trim='true' ng-maxlength='8' ng-model='inpAdditionalDistanceCharge'>
                   <span ng-show='frmServicesOffered.inpAdditionalDistanceCharge.$dirty && frmServicesOffered.inpAdditionalDistanceCharge.$invalid' class='fa fa-times form-control-feedback'></span>
                 </div>
               </div>
+              <hr>
               <!-- xxx -->
               <div class='form-group'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpAddnlTimeOrDistance'>Addnl Time Or Distance</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpAddnlTimeOrDistance'>Addnl Time Or Distance</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpAddnlTimeOrDistance' ng-model='inpAddnlTimeOrDistance'>
                 </div>
               </div>
               <!-- xxx -->
-              <div class='form-group has-feedback'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpCountServicesBooked'>Count Services Booked</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
-                  <input type='number' name='inpCountServicesBooked' class='form-control' maxlength='5' placeholder='0' ng-pattern='IntRegEx' ng-trim='true' ng-maxlength='5' ng-model='inpCountServicesBooked'>
-                  <span ng-show='frmServicesOffered.inpCountServicesBooked.$dirty && frmServicesOffered.inpCountServicesBooked.$invalid' class='fa fa-times form-control-feedback'></span>
-                </div>
-              </div>
-              <!-- xxx -->
-              <div class='form-group has-feedback'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpWhenAdded'>When Added</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
-                  <input class='form-control' name='inpWhenAdded' type='datetime' ng-model='inpWhenAdded'>
-                  <span ng-show='frmServicesOffered.inpWhenAdded.$dirty && frmServicesOffered.inpWhenAdded.$invalid' class='fa fa-times form-control-feedback'></span>
-                </div>
-              </div>
             </form>
-            <!-- xxx -->
           </div>
           <!-- ------ -->
           <div class='modal-footer'>
@@ -2032,61 +2055,69 @@
             <form class='form-horizontal' role='form' name='frmPrescriptions'>
               <!-- xxx -->
               <div class='form-group has-feedback'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpDescription'>Description</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpDescription'>Description</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input type='text' class='form-control' name='inpDescription' maxlength='60' minlength='1' placeholder='Description' ng-trim='true' ng-maxlength='60' ng-model='inpDescription'>
                   <span ng-show='frmPrescriptions.inpDescription.$dirty && frmPrescriptions.inpDescription.$invalid' class='fa fa-times form-control-feedback'></span>
                 </div>
               </div>
               <!-- xxx -->
               <div class='form-group has-feedback'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpDosage'>Dosage</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpDosage'>Dosage</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input type='text' class='form-control' name='inpDosage' maxlength='45' minlength='1' placeholder='Dosage' ng-trim='true' ng-maxlength='45' ng-model='inpDosage'>
                   <span ng-show='frmPrescriptions.inpDosage.$dirty && frmPrescriptions.inpDosage.$invalid' class='fa fa-times form-control-feedback'></span>
                 </div>
               </div>
               <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpUnits'>Units</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
+                  <input type='text' class='form-control typeahead' name='inpUnits' placeholder='Units ...' ng-model='inpUnits'>
+                  <span ng-show='frmPrescriptions.inpUnits.$dirty && frmPrescriptions.inpUnits.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
               <div class='form-group'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpMorning'>Morning</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpMorning'>Morning</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpMorning' ng-model='inpMorning'>
                 </div>
               </div>
               <!-- xxx -->
               <div class='form-group'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpAfternoon'>Afternoon</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpAfternoon'>Afternoon</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpAfternoon' ng-model='inpAfternoon'>
                 </div>
               </div>
               <!-- xxx -->
               <div class='form-group'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpNight'>Night</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpNight'>Night</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpNight' ng-model='inpNight'>
                 </div>
               </div>
               <!-- xxx -->
               <div class='form-group has-feedback'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpDuration'>Duration</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpDuration'>Duration</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input type='text' class='form-control' name='inpDuration' maxlength='10' minlength='1' placeholder='Duration' ng-trim='true' ng-maxlength='10' ng-model='inpDuration'>
                   <span ng-show='frmPrescriptions.inpDuration.$dirty && frmPrescriptions.inpDuration.$invalid' class='fa fa-times form-control-feedback'></span>
                 </div>
               </div>
               <!-- xxx -->
               <div class='form-group has-feedback'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpDurationUnits'>Duration Units</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpDurationUnits'>Duration Units</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <input type='text' class='form-control typeahead' name='inpDurationUnits' placeholder='Duration Units ...' ng-model='inpDurationUnits'>
                   <span ng-show='frmPrescriptions.inpDurationUnits.$dirty && frmPrescriptions.inpDurationUnits.$invalid' class='fa fa-times form-control-feedback'></span>
                 </div>
               </div>
               <!-- xxx -->
               <div class='form-group'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpBeforeAfterMeal'>Before After Meal</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpBeforeAfterMeal'>Before After Meal</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <div class='btn-group' data-toggle='buttons' name='inpBeforeAfterMeal' style='color:#000;'>
                     <label data-loading-text='loading...' class='btn btn-default active'><input type='radio' name='optionsBeforeAfterMeal' data-sel='1'>Before Meal</label>
                     <label data-loading-text='loading...' class='btn btn-default'       ><input type='radio' name='optionsBeforeAfterMeal' data-sel='2'>With Meal</label>
@@ -2096,8 +2127,8 @@
               </div>
               <!-- xxx -->
               <div class='form-group'>
-                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-2 control-label' for='inpInstructions'>Instructions</label>
-                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-6'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpInstructions'>Instructions</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
                   <textarea class='form-control' name='inpInstructions' ng-model='inpInstructions'></textarea>
                 </div>
               </div>
@@ -2112,6 +2143,288 @@
       </div>
     </div>
 
+    <div id='ModalMessageDefaults' class='modal fade' tabindex='-1' role='dialog' aria-hidden='true'>
+      <div class='modal-dialog modal-lg'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+          <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span></button>
+            <h4 class='modal-title'>MessageDefaults draft form</h4>
+          </div>
+          <!-- ------ -->
+          <div class='modal-body'>
+            <form class='form-horizontal' role='form' name='frmMessageDefaults'>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-6  col-sm-4 col-md-2 col-lg-2 control-label' for='inpLanguage'>Language</label>
+                <div class='col-xs-6 col-sm-9 col-md-10 col-lg-6'>
+                  <input type='text' class='form-control typeahead' name='inpLanguage' placeholder='Language ...' ng-model='inpLanguage'>
+                  <span ng-show='frmMessageDefaults.inpLanguage.$dirty && frmMessageDefaults.inpLanguage.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-6  col-sm-4 col-md-2 col-lg-2 control-label' for='inpMsgPurpose'>Purpose</label>
+                <div class='col-xs-6 col-sm-9 col-md-10 col-lg-6'>
+                  <input type='text' class='form-control' name='inpMsgPurpose' maxlength='45' minlength='1' placeholder='Purpose' ng-trim='true' ng-maxlength='45' ng-model='inpMsgPurpose'>
+                  <span ng-show='frmMessageDefaults.inpMsgPurpose.$dirty && frmMessageDefaults.inpMsgPurpose.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-6  col-sm-4 col-md-2 col-lg-2 control-label' for='inpMsgSubject'>Subject</label>
+                <div class='col-xs-6 col-sm-9 col-md-10 col-lg-6'>
+                  <input type='text' class='form-control' name='inpMsgSubject' maxlength='45' minlength='1' placeholder='Subject' ng-trim='true' ng-maxlength='45' ng-model='inpMsgSubject'>
+                  <span ng-show='frmMessageDefaults.inpMsgSubject.$dirty && frmMessageDefaults.inpMsgSubject.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group'>
+                <label class='col-xs-6  col-sm-4 col-md-2 col-lg-2 control-label' for='inpMsgBody'>Body</label>
+                <div class='col-xs-6 col-sm-9 col-md-10 col-lg-6'>
+                  <textarea class='form-control' name='inpMsgBody' ng-model='inpMsgBody'></textarea>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group'>
+                <label class='col-xs-6  col-sm-4 col-md-2 col-lg-2 control-label' for='inpUseForSMS'>Use For SMS</label>
+                <div class='col-xs-6 col-sm-9 col-md-10 col-lg-6'>
+                  <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpUseForSMS' ng-model='inpUseForSMS'>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group'>
+                <label class='col-xs-6  col-sm-4 col-md-2 col-lg-2 control-label' for='inpUseForeMail'>Use For eMail</label>
+                <div class='col-xs-6 col-sm-9 col-md-10 col-lg-6'>
+                  <input checked type='checkbox' data-on-text='Yes' data-off-text='No' data-on-color='danger' data-off-color='default' name='inpUseForeMail' ng-model='inpUseForeMail'>
+                </div>
+              </div>
+              <!-- xxx -->
+            </form>
+          </div>
+          <!-- ------ -->
+          <div class='modal-footer'>
+            <button class='btn pull-right btn-default' data-toggle='modal' data-dismiss='modal' aria-hidden='true'><i class='fa fa-times'></i> Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id='ModalAddresses' class='modal fade' tabindex='-1' role='dialog' aria-hidden='true'>
+      <div class='modal-dialog modal-lg'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+          <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span></button>
+            <h4 class='modal-title'>Addresses draft form</h4>
+          </div>
+          <!-- ------ -->
+          <div class='modal-body'>
+            <form class='form-horizontal' role='form' name='frmAddresses'>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-6  col-sm-4 col-md-2 col-lg-2 control-label' for='inpContactFor'>Contact For</label>
+                <div class='col-xs-6 col-sm-9 col-md-10 col-lg-6'>
+                  <select class='form-control' name='inpContactFor'>
+                    <option value='A'>Businesses</option>
+                    <option value='B'>Carers</option>
+                    <option value='C'>Customers</option>
+                    <option value='D'>Anything Else</option>
+                    <option value='E'>Add more here</option>
+                  </select>
+                  <span ng-show='frmAddresses.inpContactFor.$dirty && frmAddresses.inpContactFor.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-6  col-sm-4 col-md-2 col-lg-2 control-label' for='inpLine1'>Line 1</label>
+                <div class='col-xs-6 col-sm-9 col-md-10 col-lg-6'>
+                  <input type='text' class='form-control' name='inpLine1' maxlength='45' minlength='1' placeholder='Line 1' ng-trim='true' ng-maxlength='45' ng-model='inpLine1'>
+                  <span ng-show='frmAddresses.inpLine1.$dirty && frmAddresses.inpLine1.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-6  col-sm-4 col-md-2 col-lg-2 control-label' for='inpLine2'>Line 2</label>
+                <div class='col-xs-6 col-sm-9 col-md-10 col-lg-6'>
+                  <input type='text' class='form-control' name='inpLine2' maxlength='45' minlength='1' placeholder='Line 2' ng-trim='true' ng-maxlength='45' ng-model='inpLine2'>
+                  <span ng-show='frmAddresses.inpLine2.$dirty && frmAddresses.inpLine2.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-6  col-sm-4 col-md-2 col-lg-2 control-label' for='inpArea'>Area</label>
+                <div class='col-xs-6 col-sm-9 col-md-10 col-lg-6'>
+                  <input type='text' class='form-control' name='inpArea' maxlength='45' minlength='1' placeholder='Area' ng-trim='true' ng-maxlength='45' ng-model='inpArea'>
+                  <span ng-show='frmAddresses.inpArea.$dirty && frmAddresses.inpArea.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-6  col-sm-4 col-md-2 col-lg-2 control-label' for='inpTownOrCity'>Town Or City</label>
+                <div class='col-xs-6 col-sm-9 col-md-10 col-lg-6'>
+                  <input type='text' class='form-control' name='inpTownOrCity' maxlength='45' minlength='1' placeholder='Town Or City' ng-trim='true' ng-maxlength='45' ng-model='inpTownOrCity'>
+                  <span ng-show='frmAddresses.inpTownOrCity.$dirty && frmAddresses.inpTownOrCity.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-6  col-sm-4 col-md-2 col-lg-2 control-label' for='inpPostalCode'>Postal Code</label>
+                <div class='col-xs-6 col-sm-9 col-md-10 col-lg-6'>
+                  <input type='text' class='form-control' name='inpPostalCode' maxlength='7' minlength='1' placeholder='Postal Code' ng-trim='true' ng-maxlength='7' ng-model='inpPostalCode'>
+                  <span ng-show='frmAddresses.inpPostalCode.$dirty && frmAddresses.inpPostalCode.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+            </form>
+          </div>
+          <!-- ------ -->
+          <div class='modal-footer'>
+            <button class='btn pull-right btn-default' data-toggle='modal' data-dismiss='modal' aria-hidden='true'><i class='fa fa-times'></i> Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id='ModalWorkSchedules' class='modal fade' tabindex='-1' role='dialog' aria-hidden='true'>
+      <div class='modal-dialog modal-lg'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+          <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span></button>
+            <h4 class='modal-title'>WorkSchedules draft form</h4>
+          </div>
+          <!-- ------ -->
+          <div class='modal-body'>
+            <form class='form-horizontal' role='form' name='frmWorkSchedules'>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 input-lg control-label' for='inpScheduleName'>Schedule Name</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
+                  <input type='text' class='form-control input-lg' name='inpScheduleName' maxlength='45' minlength='1' placeholder='Schedule Name' ng-trim='true' ng-maxlength='45' ng-model='inpScheduleName'>
+                  <span ng-show='frmWorkSchedules.inpScheduleName.$dirty && frmWorkSchedules.inpScheduleName.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 input-lg control-label' for='inpDaysOfWeek'>Days Of Week</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
+                  <div class='btn-toolbar' data-toggle='buttons' role="toolbar" name='inpDaysOfWeek' style='color:#000;'>
+                    <button type='button' class='btn' data-sel='7'>S</button>
+                    <button type='button' class='btn active' data-sel='1'>M</button>
+                    <button type='button' class='btn active' data-sel='2'>T</button>
+                    <button type='button' class='btn active' data-sel='3'>W</button>
+                    <button type='button' class='btn active' data-sel='4'>T</button>
+                    <button type='button' class='btn active' data-sel='5'>F</button>
+                    <button type='button' class='btn' data-sel='6'>S</button>
+                  </div>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 input-lg control-label' for='inpTimeStart'>Time Start</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
+                  <input class='form-control input-lg' name='inpTimeStart' type='time' ng-model='inpTimeStart'>
+                  <span ng-show='frmWorkSchedules.inpTimeStart.$dirty && frmWorkSchedules.inpTimeStart.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 input-lg control-label' for='inpTimeEnd'>Time End</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
+                  <input class='form-control input-lg' name='inpTimeEnd' type='time' ng-model='inpTimeEnd'>
+                  <span ng-show='frmWorkSchedules.inpTimeEnd.$dirty && frmWorkSchedules.inpTimeEnd.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+            </form>
+          </div>
+          <!-- ------ -->
+          <div class='modal-footer'>
+            <button class='btn pull-right btn-default' data-toggle='modal' data-dismiss='modal' aria-hidden='true'><i class='fa fa-times'></i> Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id='ModalAppointment' class='modal fade' tabindex='-1' role='dialog' aria-hidden='true'>
+      <div class='modal-dialog modal-lg'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+          <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span></button>
+            <h4 class='modal-title'>Appointment draft form</h4>
+          </div>
+          <!-- ------ -->
+          <div class='modal-body'>
+            <form class='form-horizontal' role='form' name='frmAppointment'>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpWhenDay'>When Day</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
+                  <input class='form-control' name='inpWhenDay' type='date' date-date-format='dd-mm-yyyy' value="{{ date | date: 'dd-MM-yyyy' }}" ng-model='inpWhenDay'>
+                  <span ng-show='frmAppointment.inpWhenDay.$dirty && frmAppointment.inpWhenDay.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpStartTime'>Start Time</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
+                  <input class='form-control' name='inpStartTime' type='time' ng-model='inpStartTime'>
+                  <span ng-show='frmAppointment.inpStartTime.$dirty && frmAppointment.inpStartTime.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 control-label' for='inpEndTime'>End Time</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
+                  <input class='form-control' name='inpEndTime' type='time' ng-model='inpEndTime'>
+                  <span ng-show='frmAppointment.inpEndTime.$dirty && frmAppointment.inpEndTime.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+            </form>
+          </div>
+          <!-- ------ -->
+          <div class='modal-footer'>
+            <button class='btn pull-right btn-default' data-toggle='modal' data-dismiss='modal' aria-hidden='true'><i class='fa fa-times'></i> Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id='ModalAvailableExtras' class='modal fade' tabindex='-1' role='dialog' aria-hidden='true'>
+      <div class='modal-dialog modal-lg'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+          <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span></button>
+            <h4 class='modal-title'>AvailableExtras draft form</h4>
+          </div>
+          <!-- ------ -->
+          <div class='modal-body'>
+            <form class='form-horizontal' role='form' name='frmAvailableExtras'>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 input-lg control-label' for='inpExtraName'>Extra Name</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
+                  <input type='text' class='form-control input-lg typeahead' name='inpExtraName' placeholder='Extra Name ...' ng-model='inpExtraName'>
+                  <span ng-show='frmAvailableExtras.inpExtraName.$dirty && frmAvailableExtras.inpExtraName.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+              <div class='form-group has-feedback'>
+                <label class='col-xs-12 col-sm-2 col-md-3 col-lg-4 input-lg control-label' for='inpInitialCharge'>Initial Charge</label>
+                <div class='col-xs-12 col-sm-9 col-md-9 col-lg-8'>
+                  <input type='number' name='inpInitialCharge' class='form-control input-lg' maxlength='8' placeholder='0' ng-pattern='FloatRegEx' ng-trim='true' ng-maxlength='8' ng-model='inpInitialCharge'>
+                  <span ng-show='frmAvailableExtras.inpInitialCharge.$dirty && frmAvailableExtras.inpInitialCharge.$invalid' class='fa fa-times form-control-feedback'></span>
+                </div>
+              </div>
+              <!-- xxx -->
+            </form>
+          </div>
+          <!-- ------ -->
+          <div class='modal-footer'>
+            <button class='btn pull-right btn-default' data-toggle='modal' data-dismiss='modal' aria-hidden='true'><i class='fa fa-times'></i> Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src='assets/js/jquery-1.11.1.min.js'></script>
     <script src='assets/js/bootstrap.min.js'></script>
